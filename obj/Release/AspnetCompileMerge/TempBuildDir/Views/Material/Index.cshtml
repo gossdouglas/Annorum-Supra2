@@ -1,5 +1,10 @@
 @model IEnumerable<annorum_supra.Models.tbl_common_mtrl>
 
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
 <!DOCTYPE html>
 <html lang="en">
     <head>
@@ -11,8 +16,7 @@
         <title>Advising Tool</title>
         <!-- Bootstrap core CSS -->
         <!-- <link href="./bootstrap/css/bootstrap.css" rel="stylesheet"> -->
-        <link href=".../Content/bootstrap.css" rel="stylesheet"> 
-        <link href="./bootstrap/css/bootstrap.css" rel="stylesheet">
+        <link href=".../Content/bootstrap.css" rel="stylesheet">
         <script src="Scripts\jquery-3.3.1.min.js"></script>
         <script src="Scripts\bootstrap.js"></script>
         <script src="Scripts\popper.min.js"></script>
@@ -20,11 +24,12 @@
     <body>
         <div class="container">
             <div class="row">
-                <h1>Materials</h1>
+                <h1>Material Management</h1>
                 <hr>
             </div>
             <div class="row">
                 <div class="col-md-12">
+                    <hr>
                     <form role="form" action="./cgi-bin/assign.cgi" method="post">
                         <div class="form-group"> 
                             <div class="row border border-dark">
@@ -33,23 +38,23 @@
                                     <p>10007</p> 
                                 </div>
                                 <div class="col-md-3">
-                                    <h6>TYPE</h6>
-                                    <select class="form-control"> 
+                                    <h5>TYPE</h5>
+                                    <select class="form-control" disabled="true"> 
                                         <option>1</option>                                         
                                         <option>2</option>                                         
                                         <option>3</option>                                         
                                     </select>                                     
                                 </div>
                                 <div class="col-md-3">
-                                    <h6>SUB-TYPE</h6>
-                                    <select class="form-control"> 
+                                    <h5>SUB-TYPE</h5>
+                                    <select class="form-control" disabled="true"> 
                                         <option>1</option>                                         
                                         <option>2</option>                                         
                                         <option>3</option>                                         
                                     </select>                                     
                                 </div>
                                 <div class="col-md-auto">
-                                    <h6>ACTION</h6>
+                                    <h5>ACTION</h5>
                                     <button type="submit" class="btn btn-primary">Submit</button>                                     
                                 </div>
                             </div>

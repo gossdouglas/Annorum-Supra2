@@ -1,5 +1,10 @@
 @model IEnumerable<annorum_supra.Models.tbl_common_mtrl>
 
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
 <!DOCTYPE html>
 <html lang="en">
     <head>
@@ -11,8 +16,7 @@
         <title>Advising Tool</title>
         <!-- Bootstrap core CSS -->
         <!-- <link href="./bootstrap/css/bootstrap.css" rel="stylesheet"> -->
-        <link href=".../Content/bootstrap.css" rel="stylesheet"> 
-        <link href="./bootstrap/css/bootstrap.css" rel="stylesheet">
+        <link href=".../Content/bootstrap.css" rel="stylesheet">
         <script src="Scripts\jquery-3.3.1.min.js"></script>
         <script src="Scripts\bootstrap.js"></script>
         <script src="Scripts\popper.min.js"></script>
@@ -35,7 +39,7 @@
                                 </div>
                                 <div class="col-md-3">
                                     <h5>TYPE</h5>
-                                    <select class="form-control"> 
+                                    <select class="form-control" disabled="true"> 
                                         <option>1</option>                                         
                                         <option>2</option>                                         
                                         <option>3</option>                                         
@@ -43,7 +47,7 @@
                                 </div>
                                 <div class="col-md-3">
                                     <h5>SUB-TYPE</h5>
-                                    <select class="form-control"> 
+                                    <select class="form-control" disabled="true"> 
                                         <option>1</option>                                         
                                         <option>2</option>                                         
                                         <option>3</option>                                         
